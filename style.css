@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+/* navbar styling*/
+.navbar{
+    position: fixed;
+    width: 100%;
+    padding: 5px 0;
+    background: #827397;
+    font-family: 'Poppins', sans-serif;
+    
+}
+.navbar.area{
+    padding: 5px 0;
+    background: #827397;
+}
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+.navbar .logo a{
+    color: #D6E4E5;
+    font-size: 35px;
+    font-weight: 600;
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+    
+.navbar .menu li a{
+    color: #D6E4E5;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    justify-content: space-between;
+}
+.navbar ul li a:hover{
+    color: #3F3B6C;
+
+}
+.navbar .logo a:hover{
+    color: #3F3B6C;
+}
+
+
+
+
+
+
+
+
+/*homepage styling*/
+.home{
+    display: inline-block;
+    height: 100vh;
+    font-family: 'Ubuntu', sans-serif; 
+}
+.bg{
+    background-color: #E5B8F4;
+}
+
+.home h1{
+    font-size: 75px;
+    color: black;
+    margin-top: 50%;
+}
+.home span{
+    color: #3F0071;
+    -webkit-text-stroke: 0.3Vw black;
+}
+.home span{
+    content: attr(span);
+    position: absolute;
+    color: #3F0071; 
+    width: 0;
+    -webkit-text-stroke: 0vw #3F0071;
+    border-right: 2px solid #3F0071;
+    overflow: hidden;
+    animation: animate 6s linear infinite;
+}
+
+@keyframes animate{
+    0%, 10%, 100%
+    {
+        width: 0;
+    }
+    50%, 90%
+    {
+        width: 11%;
+    }
+}
+
+.home p{
+    color: black;
+    line-height: 22px;
+    font-size: 30px;
+    color: black;
+    line-height: 100%;
+}
+.images{
+    width: 20%;
+    height: 90%;
+    position: absolute;
+    bottom: 0;
+    right: 200px;
+}
+.images img{
+    height: 90%;
+    position: absolute;
+    left: 50px;
+    right: 50px;
+    bottom: 0px;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+
+}
+.images:hover .meh{
+    bottom: 40px;
+
+}
+.images:hover .shape{
+    left: 40px;
+
+}
+
+
+
+
+/* about section styling */
+.about{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: justify;
+}
+.about-area{
+    display: inline-block;
+    width: 100%;
+    padding: 45px 0px;
+    background-color: #544179;
+    font-family: 'Poppins', sans-serif;
+}
+.about-area .about img{
+    height: auto;
+    width: 420px;
+    padding: 20px;
+}
+.about .about-text{
+    width: 550px;
+}
+
+.about-text h1{
+    color: black;
+    font-size: 80px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.about-text h3{
+    font-size: 25px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
+.about-text p{
+    color: white;
+    font-size: 18px;
+}
+
+
+
+
+
+/* photos section styling*/
+.photos-area{
+    padding: 35px 0px;
+    height: 100vh;
+    background-color: #E5B8F4;
+    font-family: 'Poppins', sans-serif;
+}
+.photos .pic{
+    display:  flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+.photos .title{
+    color: #3F0071;
+    font-size: 80px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    text-align: center;
+}
+.photos img{
+    border-radius: 10px;
+    margin: 2px;
+}
+.photos img:hover{
+    transform: scale(1.20);
+    z-index: 2;
+
+}
+
+
+
+
+
+
+
+/* family section styling*/
+.family{
+    padding: 45px 0px;
+    height: 100vh;
+    background-color: #544179;
+    font-family: "Poppins", sans-serif;
+}
+.container {
+    color: #222222;
+}
+
+.heading {
+    font-size: 60px;
+    color: black;
+    text-align: center;
+}
+
+
+.profiles {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.profile .profile-img {
+    height: 260px;
+    width: 260px;
+    border-radius: 50%;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+.name {
+    font-size: 35px;
+    text-align: center;
+
+}
+
+.profile h5 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.profile p {
+    color: white;
+    margin: 30px;
+    font-size: 16px;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+.profile img:hover{
+    transform: scale(1.1);
+    z-index: 2;
+}
+
+
+
+
+/* contact section styling*/
+.contact{
+    height: 100vh;
+    display: flex;
+    padding: 100px;
+    background-color: #E5B8F4;
+    font-family: 'Poppins', sans-serif;
+    flex-direction: column;
+}
+.contact h1{
+    text-indent: 15%;
+}
+.container-con{
+    display: flex;
+    justify-content: space-around;
+    align-items: 50px;
+}
+.container-con .contactInfo .box{
+    position: relative;
+    padding: 5px 0;
+    display: flex;
+}
+.container-con .contactInfo .box .icon{
+    min-width: 60px;
+    height: 60px;
+    color: #D6E4E5;
+    background-color: #544179;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+.contact-area{
+    width: 350px;
+    height: 470px;
+    padding: 5px;
+    margin:: auto;
+    background: #544179;
+    box-shadow: 0px 10px 5x rgba(0, 0, 0,0.1);
+}
+.contactForm form{
+    width: 260px;
+    margin: 50px 40px;
+    text-align: center;
+    align-content: center;
+
+}
+.contactForm h1{
+    text-transform: uppercase;
+    color: white;;
+    font-size: 35px;
+    color: #D6E4E5;
+}
+.contactForm input, textarea{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    display: block;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    border: 2px solid black;
+}
+.contactForm button{
+    font-family: 'Ubuntu', sans-serif;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 30px;
+    font-size: 20px;
+    border-radius: 5px;
+    background: #D6E4E5;
+
+}
+.contactForm button:hover{
+    color: #3F3B6C;
+}
+
